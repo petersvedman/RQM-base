@@ -1,1 +1,1 @@
-<script>
+console.log("Im working just fine");
