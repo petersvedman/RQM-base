@@ -1,1 +1,38 @@
 /* Stylesheet for Random Chuck Norris Machine */
+
+/* Setup section */
+
+/* Markup section */
+
+p {
+	font-size: 24px;
+}
+
+/* ID section */
+#title-elem {}
+
+#quote-elem-1{}
+
+#quote-elem-2{}
+
+#quote-elem-3{}
+
+#new {}
+
+#tweet {}
+
+/* Class section */
+.chuck-main-frame {}
+
+.chuck-quote-frame {}
+
+.chuck-title-frame {}
+
+.chuck-button-frame {}
+
+.chuck-blurb-frame {}
+
+/* end Stylesheet */
+
+
+
