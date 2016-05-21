@@ -15,20 +15,18 @@ function threeCut(str) {
   two = str.indexOf(' ', (str.length * 0.60));
   return [str.slice(0, one), str.slice(one, two), str.slice(two, str.length)];
 }
-function chuckStrings(origin){
-	var curindex=0, lastindex=0;
-	var finns = true;
-	var foo=[];
-	while (finns){
-		curindex = origin.indexOf(".", lastindex);
-		if (curindex !== -1){
-			foo.push(str.slice(lastindex,curindex));
-      console.log("f");
-		}
-		else {finns = false;}
-		lastindex=curindex;
-	}
-	console.log(foo);
+// Function chuckStrings separates the quote into strings and returns them as an array for later use
+function chuckStrings(origin) {
+  var cur = 0, last = 0;
+  var foo = [];
+  var bar = true;
+  while (bar) {
+    cur = origin.indexOf(".", last);
+    if (cur == -1) {bar = false;}
+    if (bar) {foo.push(origin.slice(last, cur + 1));}
+    last = cur + 1;
+  }
+  return foo;
 }
 // Function fixQuote fixes the &quote problem
 function fixQuote(stru) {
