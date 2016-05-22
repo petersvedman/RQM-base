@@ -4,34 +4,19 @@
 <!-- Adding necessary external scripts and styles, JQuery from Googleapis, local stylesheet, local scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="base.js"></script>
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
- 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
- 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Random Chuck Norris Machine</title>
 <meta charset="UTF-8">
 </head>
 <!-- Body section -->
 <body>
+<center>
 <!-- Begin chuck-main-frame-section -->
 <div class="chuck-main-frame">
 <!-- Begin chuck-title-frame-section -->
 <div class="chuck-title-frame">
 <!-- Begin title-elem-section -->
-<p class="title-elem">
+<p id="title-elem">
 The Chuck Norris Random Quote Machine
 </p>
 <!-- End title-elem-section -->
@@ -39,6 +24,7 @@ The Chuck Norris Random Quote Machine
 <!-- End chuck-title-frame-section -->
 <!-- Begin chuck-quote-frame-section -->
 <div class="chuck-quote-frame">
+<p>The wisdom of Chuck :</p> 
 <!-- Begin quote-elem-section -->
 <p id="quote-elem"></p>
 <!-- End quote-elem-section -->
@@ -46,8 +32,10 @@ The Chuck Norris Random Quote Machine
 <!-- End chuck-quote-frame-section -->
 <!-- Begin chuck-button-frame-section -->
 <div class="chuck-button-frame">
-<button id="new-button">New</button>
-<div id="tweet-button">Tweet</div>
+<center>
+<button class="new-button">New</button>
+<button class="tweet-button">Tweet</button>
+</center>
 <!--  <button id="tweet">Tweet</button> -->
 </div>
 <!-- End chuck-button-frame-section -->
@@ -62,5 +50,6 @@ The Chuck Norris Random Quote Machine
 <!-- End chuck-blurb-frame-section -->
 </div>
 <!-- End chuck-main-frame-section -->
+</center>
 </body>
 </html>

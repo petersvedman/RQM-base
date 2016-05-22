@@ -18,7 +18,7 @@ $(document).ready(function() {
 		 });
 	  
 	// On new-button click load a new joke  
-	  $("#new-button").click(function() {
+	  $("button.new-button").click(function() {
         $.getJSON("http://api.icndb.com/jokes/random", function(chuckNorris, chuckStatus) {
           console.log(chuckStatus);
           threeChucked = fixQuote(chuckNorris.value.joke);

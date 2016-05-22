@@ -11,26 +11,81 @@ p {
 /* ID section */
 #title-elem {}
 
-#quote-elem-1{}
-
-#quote-elem-2{}
-
-#quote-elem-3{}
-
-#new {}
-
-#tweet {}
+#quote-elem{
+	width: 90%;
+	text-shadow: 2px;
+	
+}
 
 /* Class section */
-.chuck-main-frame {}
+.new-button {
+    background-color: #FFF; /* Green */
+    border: 2px solid black;
+	border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
 
-.chuck-quote-frame {}
+.tweet-button {
+	background-color: #FFF; /* Green */
+    border: 2px solid black;
+	border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
 
-.chuck-title-frame {}
+.chuck-main-frame {
+	position : fixed;
+    top: 50%;
+    transform: translateY(-50%);
+	width: 700px;
+	background-color: light-gray;
+	text-align: align;
+	border-radius: 5px;
+	border: 2px solid black;
+	margin: 20px;
+}
 
-.chuck-button-frame {}
+.chuck-quote-frame {
+	position: relative;
+	background-color : white;
+	padding: 5px;
+	margin: 0px 20px 20px 20px;
+	border-radius: 5px;
+	text-align: center;
+	border: 2px solid black;
+	width: 90%;
+	text-shadow: 2px;
+}
 
-.chuck-blurb-frame {}
+.chuck-title-frame {
+	position: relative;
+	background-color: white;
+	padding: 5px; 
+	margin: 10px 20px 10px 20px;
+	text-align: center;
+	border-radius: 5px;
+	border: 2px solid black;
+	width: 90%;
+	text-shadow: 2px;
+	
+}
+
+.chuck-button-frame {
+	margin: 10px;
+}
+
+.chuck-blurb-frame {
+	margin: 10px;
+}
 
 /* end Stylesheet */
 
