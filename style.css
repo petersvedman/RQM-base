@@ -11,26 +11,46 @@ p {
 /* ID section */
 #title-elem {}
 
-#quote-elem-1{}
-
-#quote-elem-2{}
-
-#quote-elem-3{}
-
-#new {}
-
-#tweet {}
+#quote-elem{
+	
+}
 
 /* Class section */
-.chuck-main-frame {}
+.new-button {}
 
-.chuck-quote-frame {}
+.tweet-button {}
 
-.chuck-title-frame {}
+.chuck-main-frame {
+	position : relative;
+	width: 700px;
+	background-color: light-gray;
+	text-align: align;
+}
 
-.chuck-button-frame {}
+.chuck-quote-frame {
+	position: relative;
+	background-color : cyan;
+	padding: 5px;
+	margin: 0px 0px 20px 0px;
+}
 
-.chuck-blurb-frame {}
+.chuck-title-frame {
+	
+	background-color: pink;
+	padding: 5px;
+	margin: 10px 0px 40px 0px;
+	text-align: center;
+}
+
+.chuck-button-frame {
+	margin: 40px;
+	background-color: yellow;
+}
+
+.chuck-blurb-frame {
+	margin: 40px;
+	background-color: teal;
+}
 
 /* end Stylesheet */
 
