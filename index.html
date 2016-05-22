@@ -4,6 +4,22 @@
 <!-- Adding necessary external scripts and styles, JQuery from Googleapis, local stylesheet, local scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="base.js"></script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Random Chuck Norris Machine</title>
 <meta charset="UTF-8">
@@ -30,8 +46,9 @@ The Chuck Norris Random Quote Machine
 <!-- End chuck-quote-frame-section -->
 <!-- Begin chuck-button-frame-section -->
 <div class="chuck-button-frame">
-<button id="new">New</button>
-<button id="tweet">Tweet</button>
+<button id="new-button">New</button>
+<div id="tweet-button">Tweet</div>
+<!--  <button id="tweet">Tweet</button> -->
 </div>
 <!-- End chuck-button-frame-section -->
 <!-- Begin chuck-blurb-frame-section -->
