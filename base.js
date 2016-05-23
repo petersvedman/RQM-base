@@ -7,11 +7,11 @@ var threeChucked = "";
 // Function fixQuote fixes the &quote problem
 function fixQuote(stru) {
   return stru.split("&quot;").join("\"");
-}
+  }
 // main script section
 $(document).ready(function() {
 	// Load a joke from the API
-        $.getJSON("http://api.icndb.com/jokes/random", function(chuckNorris, chuckStatus) {
+        $.getJSON("https://api.icndb.com/jokes/random", function(chuckNorris, chuckStatus) {
         console.log(chuckStatus);
         threeChucked = fixQuote(chuckNorris.value.joke);
         $("#quote-elem").text(threeChucked);
@@ -19,10 +19,10 @@ $(document).ready(function() {
 	  
 	// On new-button click load a new joke  
 	  $("button.new-button").click(function() {
-        $.getJSON("http://api.icndb.com/jokes/random", function(chuckNorris, chuckStatus) {
+        $.getJSON("https://api.icndb.com/jokes/random", function(chuckNorris, chuckStatus) {
           console.log(chuckStatus);
           threeChucked = fixQuote(chuckNorris.value.joke);
-		  //$("#quote-elem").animate({paddingLeft: '1px'}, 1);
+          console.log(threeChucked.length);
           $("#quote-elem").text(threeChucked);
 		  $("#quote-elem").animate({paddingLeft: '25px'}, 200, 'swing');
           $("#quote-elem").animate({paddingLeft: '5px'}, 200, 'swing');
